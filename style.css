@@ -1,0 +1,148 @@
+::selection{
+background: #e1e5eb;
+color: green;
+}
+body, html {
+height: 100%;
+width: 100%;
+margin: 0;
+font-family: Arial;
+font-size: 11pt;
+background-color: #edeef0;
+min-width: 500px;
+}
+header{
+background: #507299;
+height: 37px;
+width: 100%;
+position: fixed;
+top: 0;
+}
+header img{
+height: 70%;
+margin: 0.4% 0 0.35% 15%;
+}
+nav{
+flex: 0 0 150px;
+color: #2e5473;
+padding: 1.9% 0.7% 0% 2.5%;
+}
+a{
+display: inline-block;
+color: #2e5473;
+margin-bottom: 4px;
+padding: 10px;
+text-decoration: none;
+}
+a:hover{
+background: #e1e5eb;
+}        
+.main{
+display: flex;
+min-height: 90%;
+margin-left: 20%;
+margin-top: 37px;
+}
+#content{
+padding: 21.5px 20px 0 20px;
+max-width: 560px;
+}
+.post{
+display: inline-block;   
+background: white;
+text-align: justify;
+width: 385px;
+padding: 15px;
+margin-bottom: 16px;
+border: 1px solid #d0d0d0;
+border-radius: 13px;
+}
+hr{
+background-color: #d0d0d0;
+border: none;
+height: 2.5px;
+}
+.post a{
+padding: 3px 0px 3px 0px;
+margin-bottom: 0;
+}
+.post img{
+width: 385px;
+}
+#up{
+width: 415px;
+margin: 10px -15px 5px -15px;
+}
+#info{
+position: fixed;
+width: 150px;
+padding: 21.5px 0 0 0;
+right: 18%;
+}
+.block{
+display: inline-block;
+background: white;
+width: 120px;
+border: 1px solid #d0d0d0;
+border-radius: 7px;
+padding: 15px;
+margin-bottom: 16px;
+}
+.block p{
+background-color: #edeef0;
+margin: 11px -5px 11px -5px;
+}
+footer{
+position: relative;
+background: white;
+height: 30px;
+}
+footer p{
+position: absolute;
+color: #a0a0a0;
+left: 50%;
+margin: -4px 0 17px 0;
+transform: translate(-50%, 50%);
+}
+footer button{
+position: absolute;
+right: 2.7%;
+font-size: 7pt;
+bottom: 0;
+}
+@media (max-width: 1260px){
+	.main{
+	margin-left: 7px;
+	}
+	#info{
+	display: none;
+	}
+	footer button{
+	display: none;
+	}
+}
+@media (max-width: 750px){
+	nav{
+	width: 445px;
+	height: contain;
+	padding: 20px 0 0 0;
+	}
+	a{
+	display: inline-block;
+	color: #2e5473;
+	margin-right: 5px;
+	text-decoration: none;
+	}
+	.main{
+	display: flex;
+	flex-direction: column;
+	min-height: 90%;
+	align-items: center;
+	margin-left: 0;
+	}
+	#content{
+	max-width: 560px;
+	padding: 0 20px 0 20px;
+	margin-top: -45px;
+	}
+}
